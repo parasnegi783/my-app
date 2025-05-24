@@ -38,7 +38,7 @@ export default function CopilotPanel({ onClose }) {
     try {
       // Uncommented real API call, commented mock data
       
-      const res = await axios.post("http://localhost:5000/api/chat", {
+      const res = await axios.post("https://my-app-backend-production-27f4.up.railway.app/api/chat", {
         message: input,
       });
       const reply = res.data.reply || "No reply from API.";
