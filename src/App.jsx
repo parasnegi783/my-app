@@ -5,7 +5,7 @@ import CopilotPanel from "./components/CopilotPanel";
 import { io } from "socket.io-client";
 import { saveMessage, getMessages } from "./storage"; // ✅ Correct import
 
-const socket = io("http://localhost:5000");
+const socket = io("https://my-app-backend-production-27f4.up.railway.app/api/chat");
 const currentUser = "You";
 
 export default function App() {
